@@ -105,6 +105,17 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at top left, hsla(204, 100%, 42%, 0.08), transparent 45%),
+      radial-gradient(circle at 80% 10%, hsla(154, 68%, 45%, 0.09), transparent 50%),
+      linear-gradient(180deg, hsla(208, 56%, 97%, 0.85), hsla(208, 56%, 97%, 0.95));
+  }
+
+  .glass-panel {
+    @apply border border-white/30 bg-white/70 shadow-card backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/70;
+  }
+
+  .pill-badge {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em];
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
