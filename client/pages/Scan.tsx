@@ -402,7 +402,7 @@ const VerificationBanner = ({ verification, onRescan }: VerificationBannerProps)
           <div className="flex flex-col gap-1">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">Verified details</span>
             <p className="text-sm font-semibold">{verification.medicine.name}</p>
-            <p className="text-xs text-muted-foreground">{verification.micine?.manufacturer}</p>
+            <p className="text-xs text-muted-foreground">{verification.medicine.manufacturer}</p>
           </div>
         </div>
       ) : null}
