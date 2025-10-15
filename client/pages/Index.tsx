@@ -61,7 +61,7 @@ const impactStats = [
 export default function Index() {
   return (
     <div className="space-y-24 pb-12">
-      <section className="relative overflow-hidden rounded-4xl border border-white/40 bg-white/90 px-6 py-16 shadow-card backdrop-blur-xl lg:px-16 lg:py-20 dark:border-white/10 dark:bg-slate-900/80">
+      <section className="relative overflow-hidden rounded-[3rem] border border-white/40 bg-white/90 px-6 py-16 shadow-card backdrop-blur-xl lg:px-16 lg:py-20 dark:border-white/10 dark:bg-slate-900/80">
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/15 via-white to-accent/10 opacity-90 dark:from-primary/20 dark:via-slate-900 dark:to-accent/10" />
         <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <div className="space-y-6">
@@ -109,7 +109,7 @@ export default function Index() {
             <div className="absolute inset-0 -rotate-6 rounded-[2rem] bg-gradient-to-br from-primary/60 via-primary to-accent/80 opacity-90 blur-3xl" aria-hidden />
             <div className="relative rounded-[2.5rem] border border-white/50 bg-white/90 p-6 shadow-[0_45px_80px_-45px_rgba(14,116,144,0.45)] dark:border-white/10 dark:bg-slate-900/80">
               <div className="space-y-6">
-                <div className="flex items-center justify-between rounded-2xl border border-primary/20 bg-primary/05 px-4 py-3 text-sm text-muted-foreground">
+                <div className="flex items-center justify-between rounded-2xl border border-primary/20 bg-primary/5 px-4 py-3 text-sm text-muted-foreground">
                   <div className="flex items-center gap-3">
                     <ShieldCheck className="h-5 w-5 text-primary" />
                     <div>
@@ -152,7 +152,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="grid gap-10 rounded-4xl border border-white/40 bg-white/90 px-6 py-14 shadow-card backdrop-blur-xl lg:grid-cols-2 lg:gap-16 lg:px-16 dark:border-white/10 dark:bg-slate-900/80">
+      <section className="grid gap-10 rounded-[3rem] border border-white/40 bg-white/90 px-6 py-14 shadow-card backdrop-blur-xl lg:grid-cols-2 lg:gap-16 lg:px-16 dark:border-white/10 dark:bg-slate-900/80">
         <div className="space-y-4">
           <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-accent">
             <LineChart className="h-3.5 w-3.5" />
