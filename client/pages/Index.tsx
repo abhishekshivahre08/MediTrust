@@ -54,7 +54,7 @@ const flowSteps = [
   {
     title: "Locate",
     icon: Network,
-    caption: "Surface the nearest partner pharmacy stocking the exact verified batch." ,
+    caption: "Surface the nearest partner pharmacy stocking the exact verified batch.",
   },
   {
     title: "Treat",
