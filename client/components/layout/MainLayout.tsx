@@ -17,12 +17,21 @@ const MainLayout = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" aria-hidden />
-      <div className="fixed inset-0 -z-20 bg-mesh-blue opacity-50" aria-hidden />
+      <div
+        className="fixed inset-0 -z-10 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"
+        aria-hidden
+      />
+      <div
+        className="fixed inset-0 -z-20 bg-mesh-blue opacity-50"
+        aria-hidden
+      />
       <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 pb-8 pt-6 sm:px-6 lg:px-8">
         <header className="rounded-3xl border border-white/40 bg-white/80 shadow-glow backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/70">
           <div className="flex items-center justify-between px-6 py-4">
-            <Link to="/" className="flex items-center gap-2 text-lg font-semibold text-primary">
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-lg font-semibold text-primary"
+            >
               <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                 <ShieldCheck className="h-6 w-6" />
               </span>
@@ -45,7 +54,7 @@ const MainLayout = () => {
                       "rounded-full px-4 py-2 text-sm font-medium transition",
                       isActive
                         ? "bg-primary text-primary-foreground shadow-card"
-                        : "text-muted-foreground hover:bg-primary/10 hover:text-primary"
+                        : "text-muted-foreground hover:bg-primary/10 hover:text-primary",
                     )
                   }
                 >
@@ -66,7 +75,11 @@ const MainLayout = () => {
               onClick={() => setIsMenuOpen((prev) => !prev)}
               aria-label="Toggle navigation menu"
             >
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </button>
           </div>
           {isMenuOpen ? (
@@ -82,7 +95,7 @@ const MainLayout = () => {
                         "rounded-2xl px-4 py-2 text-base font-medium transition",
                         isActive
                           ? "bg-primary text-primary-foreground"
-                          : "text-muted-foreground hover:bg-primary/10 hover:text-primary"
+                          : "text-muted-foreground hover:bg-primary/10 hover:text-primary",
                       )
                     }
                   >
@@ -109,8 +122,8 @@ const MainLayout = () => {
         <footer className="mt-12 rounded-3xl border border-white/40 bg-white/80 px-6 py-6 text-sm text-muted-foreground shadow-card backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/70">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} MediTrust. Built to restore confidence in every
-              dose.
+              © {new Date().getFullYear()} MediTrust. Built to restore
+              confidence in every dose.
             </p>
             <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.3em]">
               <span>Reliable</span>

@@ -21,7 +21,9 @@ export const findMedicineById = (input: string | null | undefined) => {
   const candidateId = maybeJson?.id ?? trimmed;
   const normalized = candidateId.toString().trim().toUpperCase();
 
-  return AUTHENTIC_MEDICINES.find((item) => item.id.toUpperCase() === normalized);
+  return AUTHENTIC_MEDICINES.find(
+    (item) => item.id.toUpperCase() === normalized,
+  );
 };
 
 const parseJson = (raw: string): Partial<MedicineRecord> | undefined => {
