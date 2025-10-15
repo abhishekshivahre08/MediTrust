@@ -84,7 +84,7 @@ const differentiators = [
 export default function Index() {
   return (
     <div className="space-y-24 pb-20 lg:space-y-32">
-      <section className="relative overflow-hidden rounded-[3.5rem] border border-white/40 bg-white/90 px-6 py-16 shadow-[0_55px_120px_-60px_rgba(12,74,110,0.55)] backdrop-blur-2xl lg:px-18 lg:py-20 dark:border-white/10 dark:bg-slate-900/75">
+      <section className="relative overflow-hidden rounded-[3.5rem] border border-white/40 bg-white/90 px-6 py-16 shadow-[0_55px_120px_-60px_rgba(12,74,110,0.55)] backdrop-blur-2xl lg:px-20 lg:py-20 dark:border-white/10 dark:bg-slate-900/75">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" aria-hidden />
         <div className="relative z-10 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-8">
@@ -163,7 +163,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="grid gap-8 rounded-[3.5rem] border border-white/40 bg-white/90 px-6 py-14 shadow-card backdrop-blur-2xl lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-18 dark:border-white/10 dark:bg-slate-900/75">
+      <section className="grid gap-8 rounded-[3.5rem] border border-white/40 bg-white/90 px-6 py-14 shadow-card backdrop-blur-2xl lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-20 dark:border-white/10 dark:bg-slate-900/75">
         <div className="space-y-5">
           <span className="pill-badge bg-accent/15 text-accent">
             How it works
@@ -193,7 +193,7 @@ export default function Index() {
         </ol>
       </section>
 
-      <section className="rounded-[3.5rem] border border-white/40 bg-white/90 px-6 py-14 shadow-card backdrop-blur-2xl lg:px-18 dark:border-white/10 dark:bg-slate-900/75">
+      <section className="rounded-[3.5rem] border border-white/40 bg-white/90 px-6 py-14 shadow-card backdrop-blur-2xl lg:px-20 dark:border-white/10 dark:bg-slate-900/75">
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
           <div className="space-y-4">
             <span className="pill-badge bg-primary/10 text-primary">Why MediTrust</span>
@@ -229,7 +229,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden rounded-[3.5rem] border border-white/50 bg-gradient-to-br from-primary/90 via-primary to-accent/80 px-6 py-16 shadow-[0_50px_110px_-60px_rgba(12,74,110,0.75)] text-primary-foreground lg:px-18 lg:py-20">
+      <section className="relative overflow-hidden rounded-[3.5rem] border border-white/50 bg-gradient-to-br from-primary/90 via-primary to-accent/80 px-6 py-16 shadow-[0_50px_110px_-60px_rgba(12,74,110,0.75)] text-primary-foreground lg:px-20 lg:py-20">
         <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%)] opacity-70 lg:block" aria-hidden />
         <div className="relative z-10 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-6">
