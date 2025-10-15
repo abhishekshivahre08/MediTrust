@@ -13,6 +13,16 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: [
+          "Inter",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "sans-serif",
+        ],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -62,6 +72,14 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        glow: "0 25px 50px -12px rgba(14, 116, 144, 0.35)",
+        card: "0 20px 45px -24px rgba(15, 23, 42, 0.45)",
+      },
+      backgroundImage: {
+        "mesh-blue":
+          "radial-gradient(circle at 20% 20%, rgba(59,130,246,0.28), transparent 50%), radial-gradient(circle at 80% 30%, rgba(16,185,129,0.22), transparent 55%), radial-gradient(circle at 50% 80%, rgba(129,140,248,0.25), transparent 60%)",
       },
       keyframes: {
         "accordion-down": {
