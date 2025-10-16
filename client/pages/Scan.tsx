@@ -112,12 +112,10 @@ const Scan = () => {
 
         if (isCancelled) return;
 
-        const html5QrCode = new Html5Qrcode(QR_READER_ID, {
-          formatsToSupport: [
-            Html5Qrcode.SUPPORTED_FORMATS.QR_CODE,
-            Html5Qrcode.SUPPORTED_FORMATS.DATA_MATRIX,
-          ],
-        });
+        // Provide the required `verbose` flag in the config to satisfy the
+        // Html5QrcodeFullConfig type. Omit explicit SUPPORTED_FORMATS usage
+        // for compatibility with the installed package typings.
+        const html5QrCode = new Html5Qrcode(QR_READER_ID, { verbose: false });
         scannerRef.current = html5QrCode;
 
         const config: Html5QrcodeCameraScanConfig = {
