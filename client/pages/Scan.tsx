@@ -112,9 +112,9 @@ const Scan = () => {
 
         if (isCancelled) return;
 
-        // Provide the required `verbose` flag in the config to satisfy the
-        // Html5QrcodeFullConfig type. Omit explicit SUPPORTED_FORMATS usage
-        // for compatibility with the installed package typings.
+        // Provide the required `verbose` flag to satisfy the Html5QrcodeFullConfig
+        // type. Avoid relying on `SUPPORTED_FORMATS` from the package typings
+        // which may not be present across versions.
         const html5QrCode = new Html5Qrcode(QR_READER_ID, { verbose: false });
         scannerRef.current = html5QrCode;
 
